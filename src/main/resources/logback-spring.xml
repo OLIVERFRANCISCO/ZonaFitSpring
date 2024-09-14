@@ -1,0 +1,14 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!--             <pattern>[%thread] %-5level: %logger - %msg%n</pattern>  -->
+            <pattern>%msg</pattern>
+        </encoder>
+    </appender>
+    <!-- Existe varios nivel pero el info es por defaul -->
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
+
+<!-- controlar la cantidad de informacion que se manda a la consola -->
